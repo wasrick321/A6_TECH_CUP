@@ -1,0 +1,1 @@
+technical cup A6

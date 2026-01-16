@@ -1,8 +1,3 @@
-technical cup A6
-deployment link: https://a6-umber.vercel.app/
-
-complete project is in diyansh branch
-
 # A6 DEX
 
 A modern, interactive profile showcase application built with React, TypeScript, and Vite. Inspired by the Pokédex interface, A6 DEX displays profiles organized by categories: Achievers, Sports, Academic Performance, and Fun Moments.

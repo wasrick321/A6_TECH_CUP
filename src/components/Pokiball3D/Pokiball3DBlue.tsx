@@ -1,20 +1,22 @@
-import { useRef } from "react"
 import { Canvas, useFrame } from "@react-three/fiber"
 import { GradientTexture, OrbitControls } from "@react-three/drei"
+import { useRef } from "react"
 import type { Group } from "three"
 
-function Pokeball() {
+function PokeballBlue() {
   const groupRef = useRef<Group>(null)
 
   // 🎥 Auto spin
   useFrame(() => {
     if (groupRef.current) {
-      groupRef.current.rotation.y += 0.01
+      groupRef.current.rotation.y += 0.008
+      groupRef.current.rotation.x += 0.002
+      groupRef.current.rotation.z += 0.001
     }
   })
 
   return (
-    <group ref={groupRef} rotation={[Math.PI / 2, 0, 0]}>
+    <group ref={groupRef} rotation={[0, 0, 0]}>
       
       {/* Main sphere */}
       <mesh castShadow receiveShadow>
@@ -22,7 +24,7 @@ function Pokeball() {
         <meshStandardMaterial roughness={0.3} metalness={0.2}>
           <GradientTexture
             stops={[0, 0.499, 0.5, 1]}
-            colors={["#d10000", "#d10000", "#ffffff", "#ffffff"]}
+            colors={["#0066ff", "#0066ff", "#ffffff", "#ffffff"]}
             size={1024}
           />
         </meshStandardMaterial>
@@ -52,7 +54,7 @@ function Pokeball() {
       <mesh position={[1.03, 0, 0]} rotation={[0, 0, Math.PI / 2]}>
         <cylinderGeometry args={[0.1, 0.1, 0.03, 32]} />
         <meshStandardMaterial
-          color="#666"
+          color="#0066ff"
           roughness={0.4}
           metalness={0.2}
         />
@@ -62,11 +64,11 @@ function Pokeball() {
   )
 }
 
-interface Pokiball3DProps {
+interface Pokiball3DBlueProps {
   className?: string
 }
 
-export function Pokiball3D({ className }: Pokiball3DProps) {
+export function Pokiball3DBlue({ className }: Pokiball3DBlueProps) {
   return (
     <Canvas
       shadows
@@ -82,8 +84,9 @@ export function Pokiball3D({ className }: Pokiball3DProps) {
         castShadow
       />
 
-      <Pokeball />
+      <PokeballBlue />
 
+      {/* Controls */}
       <OrbitControls enableZoom />
     </Canvas>
   )

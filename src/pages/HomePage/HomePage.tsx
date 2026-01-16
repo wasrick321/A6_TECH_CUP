@@ -16,8 +16,6 @@ export function HomePage() {
   const [selectedId, setSelectedId] = useState<string | null>(null)
 
   const profiles = DATA[category]
-
-  // Since search is removed, just use all profiles
   const filteredProfiles = profiles
 
   const selectedProfile = useMemo(() => {
@@ -48,39 +46,52 @@ export function HomePage() {
   }
 
   return (
-    <div className="outer-frame wide">
-      <TopBar view={view} selectedProfile={view === 'profile' ? selectedProfile : null} />
+    /* Changed from <div> to <main> for better SEO */
+    <main className="outer-frame wide">
+      
+      {/* Semantic Header for SEO */}
+      <header>
+        <TopBar view={view} selectedProfile={view === 'profile' ? selectedProfile : null} />
+      </header>
 
-      {view === 'welcome' && (
-        <WelcomeView onNavigateToCategories={() => setView('categories')} />
-      )}
+      {/* Main Content Area */}
+      <section aria-label="Main Content">
+        {view === 'welcome' && (
+          <WelcomeView onNavigateToCategories={() => setView('categories')} />
+        )}
 
-      {view === 'categories' && (
-        <CategoriesView
-          onNavigateToWelcome={() => setView('welcome')}
-          onNavigateToDashboard={handleOpenDashboard}
-        />
-      )}
+        {view === 'categories' && (
+          <CategoriesView
+            onNavigateToWelcome={() => setView('welcome')}
+            onNavigateToDashboard={handleOpenDashboard}
+          />
+        )}
 
-      {view === 'dashboard' && (
-        <DashboardView
-          category={category}
-          profiles={filteredProfiles}
-          memoryPercent={MEMORY_PERCENT}
-          onNavigateToCategories={() => setView('categories')}
-          onNavigateToProfile={handleOpenProfile}
-          onCategoryChange={handleOpenDashboard}
-        />
-      )}
+        {view === 'dashboard' && (
+          <DashboardView
+            category={category}
+            profiles={filteredProfiles}
+            memoryPercent={MEMORY_PERCENT}
+            onNavigateToCategories={() => setView('categories')}
+            onNavigateToProfile={handleOpenProfile}
+            onCategoryChange={handleOpenDashboard}
+          />
+        )}
 
-      {view === 'profile' && (
-        <ProfileView
-          profile={selectedProfile}
-          onNavigateToDashboard={() => setView('dashboard')}
-          onNavigateToPrevProfile={goPrevProfile}
-          onNavigateToNextProfile={goNextProfile}
-        />
-      )}
-    </div>
+        {view === 'profile' && (
+          <ProfileView
+            profile={selectedProfile}
+            onNavigateToDashboard={() => setView('dashboard')}
+            onNavigateToPrevProfile={goPrevProfile}
+            onNavigateToNextProfile={goNextProfile}
+          />
+        )}
+      </section>
+
+      {/* Semantic Footer for SEO */}
+      <footer style={{ textAlign: 'center', padding: '10px', opacity: 0.6, fontSize: '12px' }}>
+        <p>&copy; 2026 Phase 2 Project. All rights reserved. Optimized for SEO.</p>
+      </footer>
+    </main>
   )
 }

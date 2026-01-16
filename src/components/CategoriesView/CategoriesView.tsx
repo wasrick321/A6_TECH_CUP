@@ -1,4 +1,5 @@
 import type { CategoryKey } from '../../types'
+import { Pokiball3D } from '../Pokiball3D/Pokiball3D'
 
 interface CategoriesViewProps {
   onNavigateToWelcome: () => void
@@ -38,11 +39,9 @@ export function CategoriesView({
             className="pokeball-card"
             onClick={() => onNavigateToDashboard('achievers')}
           >
-            <img
-              className="pokeball-image"
-              src="/images/ball1.png"
-              alt="Achievers Pokéball"
-            />
+            <div className="pokeball-image" style={{ position: 'relative' }}>
+              <Pokiball3D />
+            </div>
             <span className="pokeball-label">ACHIEVERS</span>
           </button>
 

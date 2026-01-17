@@ -79,13 +79,7 @@ export function CategoriesView({
           </button>
         </div>
 
-        <button
-          className="btn back-btn-vibrant"
-          type="button"
-          onClick={onNavigateToWelcome}
-        >
-          ⬅ BACK
-        </button>
+        
       </section>
     </main>
   )

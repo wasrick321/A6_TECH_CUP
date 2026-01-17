@@ -92,7 +92,7 @@ export function DashboardView({
                 <div className="profile-card-name">{p.name.toUpperCase()}</div>
                 <div className="profile-card-role">{p.role}</div>
               </div>
-              <div className="profile-card-tag">{p.shortTag}</div>
+              
             </article>
           ))}
         </section>

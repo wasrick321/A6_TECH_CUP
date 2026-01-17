@@ -13,7 +13,6 @@ interface DashboardViewProps {
 export function DashboardView({
   category,
   profiles,
-  memoryPercent,
   onNavigateToCategories,
   onNavigateToProfile,
   onCategoryChange,

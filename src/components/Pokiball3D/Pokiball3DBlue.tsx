@@ -6,12 +6,12 @@ import type { Group } from "three"
 function PokeballBlue() {
   const groupRef = useRef<Group>(null)
 
-  // 🎥 Auto spin
+  // 🎥 Auto spin - Wobbling rotation (X and Y dominant)
   useFrame(() => {
     if (groupRef.current) {
-      groupRef.current.rotation.y += 0.008
-      groupRef.current.rotation.x += 0.002
-      groupRef.current.rotation.z += 0.001
+      groupRef.current.rotation.x += 0.012
+      groupRef.current.rotation.y += 0.005
+      groupRef.current.rotation.z += 0.003
     }
   })
 

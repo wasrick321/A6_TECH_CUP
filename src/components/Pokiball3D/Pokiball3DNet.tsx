@@ -25,12 +25,11 @@ function YellowPanel({ rotation }: YellowPanelProps) {
 function NetBall() {
   const groupRef = useRef<Group>(null)
 
-  // 🎥 Spin
+  // 🎥 Spin - Fast Y rotation with slight Z tilt
   useFrame(() => {
     if (!groupRef.current) return
-    groupRef.current.rotation.y += 0.008
-    groupRef.current.rotation.x += 0.002
-    groupRef.current.rotation.z += 0.001
+    groupRef.current.rotation.y += 0.025
+    groupRef.current.rotation.z += 0.002
   })
 
   return (

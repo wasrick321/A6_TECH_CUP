@@ -6,10 +6,10 @@ import type { Group } from "three"
 function Pokeball() {
   const groupRef = useRef<Group>(null)
 
-  // 🎥 Auto spin
+  // 🎥 Auto spin - Y axis only (steady vertical spin)
   useFrame(() => {
     if (groupRef.current) {
-      groupRef.current.rotation.y += 0.01
+      groupRef.current.rotation.y += 0.015
     }
   })
 

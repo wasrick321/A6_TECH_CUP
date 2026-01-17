@@ -7,12 +7,11 @@ import type { Group } from "three"
 function UltraBall() {
   const groupRef = useRef<Group>(null)
 
-  // 🎥 Spin
+  // 🎥 Spin - Primarily Z rotation with slow X wobble
   useFrame(() => {
     if (!groupRef.current) return
-    groupRef.current.rotation.y += 0.008
-    groupRef.current.rotation.x += 0.002
-    groupRef.current.rotation.z += 0.001
+    groupRef.current.rotation.z += 0.02
+    groupRef.current.rotation.x += 0.004
   })
 
   // Curve for yellow stripes

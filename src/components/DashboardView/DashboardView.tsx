@@ -59,22 +59,12 @@ export function DashboardView({
         </nav>
 
         <div className="sidebar-footer">
-          <div className="memory-label">
-            <span>MEMORY BANK</span>
-            <span>{memoryPercent}%</span>
-          </div>
-          <div className="memory-bar">
-            <div
-              className="memory-bar-fill"
-              style={{ width: `${memoryPercent}%` }}
-            />
-          </div>
           <button
             className="btn scanner-btn"
             type="button"
             onClick={onNavigateToCategories}
           >
-            🔍 SCANNER
+            BACK
           </button>
         </div>
       </aside>

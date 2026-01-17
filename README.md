@@ -123,13 +123,19 @@ A6/
 ├── tsconfig.json
 └── package.json
 
-🚀 Deployment
+---
+
+##🚀 Deployment
 The project is deployed using Vercel.
 🔗 Live Project Link: https://a6-umber.vercel.app/
 
-👥 Team Credits
+---
+
+##👥 Team Credits
 Developed by Class A6 (CSE Branch) for the Technical Cup Competition.
 
-🏁 Conclusion
+---
+
+##🏁 Conclusion
 A6 DEX reflects the creativity, collaboration, and technical skills of Class A6.
 The project demonstrates how modern frontend technologies can be used to build engaging, meaningful, and visually appealing web applications.

@@ -3,7 +3,8 @@
 A modern, interactive profile showcase application built with React, TypeScript, and Vite. Inspired by the Pokédex interface, A6 DEX displays profiles organized by categories: Achievers, Sports, Academic Performance, and Fun Moments.
 
 ## 🚀 Features
-
+                                       
+                                       
 - **Modern UI**: Pokédex-inspired interface with smooth animations
 - **Category Organization**: Profiles organized into 4 distinct categories
 - **Interactive Dashboard**: Browse profiles with detailed statistics

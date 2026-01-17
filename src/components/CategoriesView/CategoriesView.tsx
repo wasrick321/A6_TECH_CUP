@@ -26,10 +26,7 @@ export function CategoriesView({
         <button className="nav-link active" type="button">
           PROFILES
         </button>
-        <div className="nav-search">
-          <input type="text" placeholder="Search..." disabled />
-          <span className="search-icon">🔍</span>
-        </div>
+        
       </nav>
 
       <section className="category-screen">

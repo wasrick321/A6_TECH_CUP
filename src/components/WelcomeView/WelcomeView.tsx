@@ -6,25 +6,22 @@ export function WelcomeView({ onNavigateToCategories }: WelcomeViewProps) {
   return (
     <main className="main-screen welcome-screen fade-in">
       {/* Video Background */}
-      <video 
-        className="welcome-video-bg"
-        autoPlay 
-        muted 
-        loop
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          objectFit: 'cover',
-          zIndex: 0,
-          borderRadius: 'inherit',
-          transform: 'scale(1.3)'
-        }}
-      >
-        <source src="public/videos/13940.gif" type="video/mp4" />
-      </video>
+     <img 
+  src="/videos/13940.gif" 
+  className="welcome-video-bg"
+  alt="Background"
+  style={{
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    zIndex: 0,
+    borderRadius: 'inherit',
+    transform: 'scale(1.3)'
+  }}
+/>
 
       {/* Dark Overlay for text readability */}
       <div 

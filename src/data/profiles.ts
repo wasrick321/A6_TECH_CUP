@@ -1,347 +1,149 @@
-import type { CategoryKey, Profile } from '../types'
+import type { CategoryKey, Profile } from '../types';
 
 /**
- * PROFILE DATA - Edit profiles here!
- * 
- * Location: src/data/profiles.ts
- * 
- * To add/edit actual person info:
- * 1. Update the DATA object below with real names, roles, descriptions
- * 2. Update the 'image' field to point to their character image:
- *    - Images should be in: public/profile_character_img/
- *    - Format: ch1_girl.png, ch2_boy.png, etc.
- * 3. Fill in achievements, habits, personality, and qualities arrays
- * 4. Adjust stats (velocity, impact, creativity) as needed
- * 
- * Each category has 4 profiles. Make sure each profile has a unique image path.
+ * CLASS A6 – AUTO GENERATED PROFILES (66 Students)
+ * Category: achievers
+ * Images: Gender-based cycling
+ * Stats: humour, nerdy, creativity (random balanced)
  */
+
+const girlImages = [
+  '/profile_character_img/ch1_girl.png',
+  '/profile_character_img/ch3_girl.png',
+  '/profile_character_img/ch6_girl.png',
+];
+
+const boyImages = [
+  '/profile_character_img/ch2_boy.png',
+  '/profile_character_img/ch4_boy.png',
+  '/profile_character_img/ch5_boy.png',
+  '/profile_character_img/ch7_boy.png',
+];
+
+let g = 0;
+let b = 0;
+
+const stat = () => Math.floor(60 + Math.random() * 30);
+
+const habits = [
+  'Attends lectures regularly',
+  'Uses phone during breaks',
+  'Studies before exams',
+];
+
+const personality = [
+  'Friendly',
+  'Quiet',
+  'Practical',
+  'Observant',
+];
+
+const qualities = [
+  'Teamwork',
+  'Adaptability',
+  'Consistency',
+];
+
+const makeBoy = (id: number, name: string, roll: string): Profile => ({
+  id: `a6-${id}`,
+  name,
+  role: 'Class Member',
+  tags: ['student'],
+  description: 'A regular student managing academics and daily college life.',
+  stats: { humour: stat(), nerdy: stat(), creativity: stat() },
+  entry: roll,
+  image: boyImages[b++ % boyImages.length],
+  achievements: ['Completed coursework'],
+  habits,
+  personality,
+  qualities,
+});
+
+const makeGirl = (id: number, name: string, roll: string): Profile => ({
+  id: `a6-${id}`,
+  name,
+  role: 'Class Member',
+  tags: ['student'],
+  description: 'A regular student balancing studies and campus activities.',
+  stats: { humour: stat(), nerdy: stat(), creativity: stat() },
+  entry: roll,
+  image: girlImages[g++ % girlImages.length],
+  achievements: ['Active academic participation'],
+  habits,
+  personality,
+  qualities,
+});
+
 export const PROFILE_DATA: Record<CategoryKey, Profile[]> = {
   achievers: [
-    {
-      id: 'alex',
-      name: 'Alexi Campbel',
-      role: 'Tech Innovator',
-      tags: ['innovator', 'strategist'],
-      shortTag: 'ALPHA',
-      description:
-        'A visionary leader who transforms complex challenges into elegant solutions. Known for breakthrough innovations and strategic thinking that drives teams forward.',
-      stats: { velocity: 86, impact: 92, creativity: 78 },
-      entry: '041',
-      image: '/profile_character_img/ch1_girl.png',
-      achievements: [
-        'Led 3 major product launches',
-        'Winner of Tech Excellence Award 2024',
-        'Published 12 research papers',
-      ],
-      habits: ['Early riser (5 AM)', 'Daily meditation', 'Code reviews before coffee'],
-      personality: ['Analytical', 'Driven', 'Collaborative', 'Detail-oriented'],
-      qualities: ['Problem-solving', 'Leadership', 'Innovation', 'Resilience'],
-    },
-    {
-      id: 'maya',
-      name: 'Maya Chen',
-      role: 'Master Strategist',
-      tags: ['strategist', 'analyst'],
-      shortTag: 'ORACLE',
-      description:
-        'Reads systems and people like a map. Connects scattered ideas into sharp strategies that actually ship and scale. The go-to person for impossible deadlines.',
-      stats: { velocity: 80, impact: 95, creativity: 88 },
-      entry: '042',
-      image: '/profile_character_img/ch6_girl.png',
-      achievements: [
-        'Increased team efficiency by 40%',
-        'Strategic consultant for Fortune 500',
-        'Built 5 successful startups',
-      ],
-      habits: ['Strategic planning sessions', 'Weekly team syncs', 'Reading industry reports'],
-      personality: ['Strategic', 'Calm under pressure', 'Empathetic', 'Visionary'],
-      qualities: ['Strategic thinking', 'Communication', 'Risk assessment', 'Team building'],
-    },
-    {
-      id: 'jordan',
-      name: 'Jordan Kim',
-      role: 'Creative Architect',
-      tags: ['innovator', 'designer'],
-      shortTag: 'SPARK',
-      description:
-        'Builds experiences that feel effortless on the surface and engineered underneath. Always two steps ahead on aesthetics and user experience.',
-      stats: { velocity: 76, impact: 84, creativity: 93 },
-      entry: '043',
-      image: '/profile_character_img/ch2_boy.png',
-      achievements: [
-        'Design award winner 3 years running',
-        'Created 50+ successful UI/UX designs',
-        'Featured in Design Magazine',
-      ],
-      habits: ['Sketching daily', 'Design system updates', 'User testing sessions'],
-      personality: ['Creative', 'Perfectionist', 'User-focused', 'Experimental'],
-      qualities: ['Visual design', 'User empathy', 'Prototyping', 'Aesthetic sense'],
-    },
-    {
-      id: 'riley',
-      name: 'Riley Park',
-      role: 'Volt Tactic',
-      tags: ['wildcard'],
-      shortTag: 'STORM',
-      description:
-        'Unpredictable, electric, and impossible to ignore. Turns ordinary plans into lightning moments the team remembers. The energy source of every project.',
-      stats: { velocity: 90, impact: 88, creativity: 91 },
-      entry: '044',
-      image: '/profile_character_img/ch4_boy.png',
-      achievements: [
-        'Launched viral marketing campaigns',
-        'Built community of 100K+ followers',
-        'Turned around failing projects',
-      ],
-      habits: ['Brainstorming sessions', 'Networking events', 'Rapid prototyping'],
-      personality: ['Energetic', 'Spontaneous', 'Charismatic', 'Adaptive'],
-      qualities: ['Energy', 'Innovation', 'Networking', 'Quick thinking'],
-    },
+    makeBoy(1,'Ruhaan Dubey','A6-B1-1'),
+    makeBoy(2,'Sachin Vijay Mardikar','A6-B1-2'),
+    makeBoy(3,'Adil Sarvar Baig','A6-B1-3'),
+    makeBoy(4,'Dnyanesh Deshpande','A6-B1-4'),
+    makeGirl(5,'Manaswi Wasu','A6-B1-5'),
+    makeBoy(6,'Dhruva Bajaj','A6-B1-6'),
+    makeBoy(7,'Ramnayan Sharma','A6-B1-7'),
+    makeBoy(8,'Atharva Dhobale','A6-B1-8'),
+    makeBoy(9,'Anshuman Sharma','A6-B1-9'),
+    makeBoy(10,'Palash Falke','A6-B1-10'),
+    makeGirl(11,'Vedika Hemnani','A6-B1-11'),
+    makeBoy(12,'Sandesh Sanjay Kinhikar','A6-B1-12'),
+    makeBoy(13,'Rajveerr Awachat','A6-B1-13'),
+    makeBoy(14,'Ved Loya','A6-B1-14'),
+    makeBoy(15,'Om Vishal Satija','A6-B1-15'),
+    makeGirl(16,'Deepika Pampati','A6-B1-16'),
+    makeBoy(17,'Atharva Gangwani','A6-B1-17'),
+
+    makeBoy(18,'Anay Kalwane','A6-B2-18'),
+    makeBoy(19,'Parth Alti','A6-B2-19'),
+    makeBoy(20,'Shahwaiz Ahmed Khan','A6-B2-20'),
+    makeGirl(21,'Srushti Awadhoot','A6-B2-21'),
+    makeGirl(22,'Rashi Umesh Chilwerwar','A6-B2-22'),
+    makeBoy(23,'Diyansh Wasnik','A6-B2-23'),
+    makeGirl(24,'Simran Ghadwe','A6-B2-24'),
+    makeBoy(25,'Dipanshu Vishwakarma','A6-B2-25'),
+    makeGirl(26,'Jiya Vanjani','A6-B2-26'),
+    makeBoy(27,'Amey Karoo','A6-B2-27'),
+    makeBoy(28,'Harsh Dholia','A6-B2-28'),
+    makeBoy(29,'Sayyad Rehan Sayyad','A6-B2-29'),
+    makeGirl(30,'Arya Pachkhede','A6-B2-30'),
+    makeBoy(31,'Karunya Dahasahastra','A6-B2-31'),
+    makeBoy(32,'Utkarsh Kadu','A6-B2-32'),
+    makeBoy(33,'Manthan Sharma','A6-B2-33'),
+    makeGirl(34,'Purva Gattani','A6-B2-34'),
+
+    makeBoy(35,'Kartik Gidwani','A6-B3-35'),
+    makeBoy(36,'Aditya Dubey','A6-B3-36'),
+    makeBoy(37,'Pranav Gandhi','A6-B3-37'),
+    makeBoy(38,'Raghav Chauksey','A6-B3-38'),
+    makeBoy(39,'Samprat Prashant Deshmukh','A6-B3-39'),
+    makeGirl(40,'Anannya Chawak','A6-B3-40'),
+    makeBoy(41,'Yash Dudhabele','A6-B3-41'),
+    makeBoy(42,'Sadu Sawarkar','A6-B3-42'),
+    makeGirl(43,'Dimpal Maskey','A6-B3-43'),
+    makeGirl(44,'Sharanya Mahajan','A6-B3-44'),
+    makeBoy(45,'Vansh Suresh Sharma','A6-B3-45'),
+    makeBoy(46,'MD Suffiyan Qureshi','A6-B3-46'),
+    makeBoy(47,'Parth M Pathak','A6-B3-47'),
+    makeGirl(48,'Jigisha Mandavkar','A6-B3-48'),
+    makeGirl(49,'Anupama Sanjeevan','A6-B3-49'),
+    makeBoy(50,'Harsh Maske','A6-B3-50'),
+
+    makeGirl(51,'Avantika Doble','A6-B4-51'),
+    makeGirl(52,'Tanushri Satish Patil','A6-B4-52'),
+    makeBoy(53,'Sahil Baisware','A6-B4-53'),
+    makeGirl(54,'Bhoomika Khilnani','A6-B4-54'),
+    makeBoy(55,'Shubh Surana','A6-B4-55'),
+    makeBoy(56,'Vishal Santosh Asati','A6-B4-56'),
+    makeGirl(57,'Chitranshi Katre','A6-B4-57'),
+    makeBoy(58,'Vedant Ghate','A6-B4-58'),
+    makeBoy(59,'Pradyun Khot','A6-B4-59'),
+    makeBoy(60,'Piyush Ashok Baheti','A6-B4-60'),
+    makeGirl(61,'Palak Parkhi','A6-B4-61'),
+    makeGirl(62,'Samrudhi Madankar','A6-B4-62'),
+    makeBoy(63,'Nayan Zanwar','A6-B4-63'),
+    makeBoy(64,'Agastya Godbole','A6-B4-64'),
+    makeBoy(65,'Nihal Raut','A6-B4-65'),
+    makeBoy(66,'Krish Sawant','A6-B4-66'),
   ],
-  sports: [
-    {
-      id: 'cameron',
-      name: 'Cameron Black',
-      role: 'Field Commander',
-      tags: ['captain', 'sports'],
-      shortTag: 'CLUTCH',
-      description:
-        'Holds the squad together under pressure and makes the tough calls when the clock runs out. Natural leader who elevates everyone around them.',
-      stats: { velocity: 88, impact: 90, creativity: 72 },
-      entry: '101',
-      image: '/profile_character_img/ch5_boy.png',
-      achievements: [
-        'Championship MVP 3 times',
-        'Led team to 5 consecutive wins',
-        'All-Star selection 4 years',
-      ],
-      habits: ['Morning training', 'Team strategy reviews', 'Post-game analysis'],
-      personality: ['Leader', 'Competitive', 'Supportive', 'Focused'],
-      qualities: ['Leadership', 'Tactical thinking', 'Team motivation', 'Pressure handling'],
-    },
-    {
-      id: 'sam',
-      name: 'Sarah Taylor',
-      role: 'Offense Specialist',
-      tags: ['offense'],
-      shortTag: 'LASER',
-      description:
-        'Deadly accuracy from range and an instinct for finding the smallest scoring window. The finisher who delivers when it matters most.',
-      stats: { velocity: 82, impact: 87, creativity: 70 },
-      entry: '102',
-      image: '/profile_character_img/ch6_girl.png',
-      achievements: [
-        'Top scorer 2 seasons',
-        'Record-breaking accuracy',
-        'Rookie of the Year',
-      ],
-      habits: ['Target practice', 'Film study', 'Precision drills'],
-      personality: ['Precise', 'Confident', 'Determined', 'Calm'],
-      qualities: ['Accuracy', 'Focus', 'Timing', 'Composure'],
-    },
-    {
-      id: 'drew',
-      name: 'Drew Martinez',
-      role: 'Defense Anchor',
-      tags: ['defense'],
-      shortTag: 'SHIELD',
-      description:
-        'Reads the game three moves ahead and shuts down anything that looks like a threat. The immovable force protecting the team.',
-      stats: { velocity: 74, impact: 85, creativity: 65 },
-      entry: '103',
-      image: '/profile_character_img/ch7_boy.png',
-      achievements: [
-        'Best defender award',
-        'Zero goals allowed streak',
-        'Defensive player of year',
-      ],
-      habits: ['Defensive drills', 'Game tape analysis', 'Strength training'],
-      personality: ['Protective', 'Alert', 'Disciplined', 'Reliable'],
-      qualities: ['Positioning', 'Anticipation', 'Strength', 'Awareness'],
-    },
-    {
-      id: 'casey',
-      name: 'Casey Morgan',
-      role: 'Stamina Core',
-      tags: ['endurance'],
-      shortTag: 'RALLY',
-      description:
-        'Never runs out of gas. When everyone slows down, this one quietly takes over. The engine that never quits.',
-      stats: { velocity: 90, impact: 80, creativity: 68 },
-      entry: '104',
-      image: '/profile_character_img/ch1_girl.png',
-      achievements: [
-        'Marathon runner',
-        'Endurance record holder',
-        'Ironman competitor',
-      ],
-      habits: ['Long distance runs', 'Endurance training', 'Recovery routines'],
-      personality: ['Persistent', 'Resilient', 'Patient', 'Strong-willed'],
-      qualities: ['Stamina', 'Endurance', 'Mental toughness', 'Consistency'],
-    },
-  ],
-  academics: [
-    {
-      id: 'quinn',
-      name: 'Quinn Anderson',
-      role: 'Pattern Hunter',
-      tags: ['analytics'],
-      shortTag: 'INSIGHT',
-      description:
-        'Sees structure inside noise and transforms random numbers into crisp decisions. The data whisperer who finds patterns others miss.',
-      stats: { velocity: 30, impact: 20, creativity: 100 },
-      entry: '201',
-      image: '/profile_character_img/ch2_boy.png',
-      achievements: [
-        'Summa Cum Laude graduate',
-        'Published research in top journals',
-        'Data science competition winner',
-      ],
-      habits: ['Daily data analysis', 'Reading research papers', 'Building models'],
-      personality: ['Analytical', 'Curious', 'Methodical', 'Detail-focused'],
-      qualities: ['Data analysis', 'Statistical thinking', 'Problem-solving', 'Research'],
-    },
-    {
-      id: 'sage',
-      name: 'Sage Williams',
-      role: 'Knowledge Core',
-      tags: ['research'],
-      shortTag: 'ARCHIVE',
-      description:
-        'Deep research, tight notes, and recall that feels like cheating (but isn\'t). The walking encyclopedia of the team.',
-      stats: { velocity: 70, impact: 92, creativity: 76 },
-      entry: '202',
-      image: '/profile_character_img/ch3_girl.png',
-      achievements: [
-        'PhD in Computer Science',
-        '100+ research citations',
-        'Academic excellence award',
-      ],
-      habits: ['Reading 2 hours daily', 'Note-taking system', 'Literature reviews'],
-      personality: ['Scholarly', 'Thorough', 'Intellectual', 'Organized'],
-      qualities: ['Research', 'Knowledge retention', 'Writing', 'Critical thinking'],
-    },
-    {
-      id: 'finley',
-      name: 'Finley Reed',
-      role: 'Systems Builder',
-      tags: ['tech'],
-      shortTag: 'STACK',
-      description:
-        'Writes code that is both brutal and beautiful. Turns vague ideas into running systems. The architect of digital solutions.',
-      stats: { velocity: 84, impact: 90, creativity: 88 },
-      entry: '203',
-      image: '/profile_character_img/ch4_boy.png',
-      achievements: [
-        'Built 20+ production systems',
-        'Open source contributor',
-        'Tech conference speaker',
-      ],
-      habits: ['Daily coding practice', 'Code reviews', 'System architecture planning'],
-      personality: ['Technical', 'Precise', 'Innovative', 'Systematic'],
-      qualities: ['Coding', 'System design', 'Debugging', 'Architecture'],
-    },
-    {
-      id: 'avery',
-      name: 'Avery Lee',
-      role: 'Support Engine',
-      tags: ['mentor'],
-      shortTag: 'GUIDE',
-      description:
-        'The quiet force upgrading everyone else\'s grades, not just their own. The mentor who makes everyone better.',
-      stats: { velocity: 72, impact: 86, creativity: 79 },
-      entry: '204',
-      image: '/profile_character_img/ch5_boy.png',
-      achievements: [
-        'Tutored 50+ students',
-        'Peer mentor program leader',
-        'Academic support award',
-      ],
-      habits: ['Study group sessions', 'Mentoring hours', 'Knowledge sharing'],
-      personality: ['Supportive', 'Patient', 'Empathetic', 'Encouraging'],
-      qualities: ['Teaching', 'Communication', 'Patience', 'Empathy'],
-    },
-  ],
-  fun: [
-    {
-      id: 'zoe',
-      name: 'Zoe Mitchell',
-      role: 'Mood Booster',
-      tags: ['fun'],
-      shortTag: 'VIBE',
-      description:
-        'Delivers the exact meme at the exact second the group chat needs it. The energy source who keeps spirits high and laughter flowing.',
-      stats: { velocity: 88, impact: 80, creativity: 96 },
-      entry: '301',
-      image: '/profile_character_img/ch6_girl.png',
-      achievements: [
-        'Viral meme creator',
-        'Social media influencer',
-        'Comedy content creator',
-      ],
-      habits: ['Daily meme creation', 'Trend watching', 'Social media engagement'],
-      personality: ['Humorous', 'Energetic', 'Creative', 'Social'],
-      qualities: ['Humor', 'Creativity', 'Social awareness', 'Entertainment'],
-    },
-    {
-      id: 'jamie',
-      name: 'Jamie Foster',
-      role: 'Beat Curator',
-      tags: ['music'],
-      shortTag: 'LOOP',
-      description:
-        'Owns the aux, the playlists, and the memory of every track that shaped the semester. The soundtrack architect of every moment.',
-      stats: { velocity: 79, impact: 83, creativity: 92 },
-      entry: '302',
-      image: '/profile_character_img/ch7_boy.png',
-      achievements: [
-        'DJ at major events',
-        'Playlist curator for 1000+',
-        'Music production releases',
-      ],
-      habits: ['Daily music discovery', 'Playlist creation', 'Sound mixing'],
-      personality: ['Musical', 'Trendy', 'Expressive', 'Rhythmic'],
-      qualities: ['Music knowledge', 'Curation', 'Sound design', 'Taste'],
-    },
-    {
-      id: 'skylar',
-      name: 'Skylar Gray',
-      role: 'Narrative Engine',
-      tags: ['stories'],
-      shortTag: 'VERSION',
-      description:
-        'Turns simple days into legendary stories that get retold for years. The storyteller who makes every moment memorable.',
-      stats: { velocity: 75, impact: 82, creativity: 94 },
-      entry: '303',
-      image: '/profile_character_img/ch1_girl.png',
-      achievements: [
-        'Published short stories',
-        'Storytelling competition winner',
-        'Podcast host',
-      ],
-      habits: ['Daily journaling', 'Story writing', 'Narrative practice'],
-      personality: ['Imaginative', 'Expressive', 'Charismatic', 'Observant'],
-      qualities: ['Storytelling', 'Writing', 'Imagination', 'Communication'],
-    },
-    {
-      id: 'parker',
-      name: 'Parker Brooks',
-      role: 'Chaos Architect',
-      tags: ['pranks'],
-      shortTag: 'GLITCH',
-      description:
-        'Never mean, always clever. Tiny pranks that keep the group awake and laughing. The master of harmless mischief.',
-      stats: { velocity: 82, impact: 78, creativity: 95 },
-      entry: '304',
-      image: '/profile_character_img/ch2_boy.png',
-      achievements: [
-        'Epic prank coordinator',
-        'Comedy event organizer',
-        'Team morale booster',
-      ],
-      habits: ['Prank planning', 'Comedy research', 'Surprise execution'],
-      personality: ['Playful', 'Clever', 'Mischievous', 'Lighthearted'],
-      qualities: ['Creativity', 'Timing', 'Humor', 'Surprise'],
-    },
-  ],
-}
+};

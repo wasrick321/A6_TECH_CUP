@@ -96,14 +96,6 @@ export function DashboardView({
             </article>
           ))}
         </section>
-
-        <button
-          className="btn back-btn-vibrant lower"
-          type="button"
-          onClick={onNavigateToCategories}
-        >
-          ⬅ BACK
-        </button>
       </main>
     </div>
   )

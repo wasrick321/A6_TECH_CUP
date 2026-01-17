@@ -1,4 +1,5 @@
 # A6 DEX
+Deployed link:  https://a6-tech-cup-frq2.vercel.app/
 
 A modern, interactive profile showcase application built with React, TypeScript, and Vite. Inspired by the Pokédex interface, A6 DEX displays profiles organized by categories: Achievers, Sports, Academic Performance, and Fun Moments.
 

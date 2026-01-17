@@ -82,7 +82,7 @@ export function ProfileView({
             <h3 className="stats-title">CORE STATISTICS</h3>
 
             <div className="stat-row">
-              <span>VELOCITY</span>
+              <span>HUMOR</span>
               <div className="stat-bar">
                 <div
                   className="stat-bar-fill"
@@ -93,7 +93,7 @@ export function ProfileView({
             </div>
 
             <div className="stat-row">
-              <span>IMPACT</span>
+              <span>NERDY</span>
               <div className="stat-bar">
                 <div
                   className="stat-bar-fill"

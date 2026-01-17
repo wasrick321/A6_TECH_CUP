@@ -1,4 +1,8 @@
 import type { CategoryKey } from '../../types'
+import { Pokiball3D } from '../Pokiball3D/Pokiball3D'
+import { Pokiball3DBlue } from '../Pokiball3D/Pokiball3DBlue'
+import { Pokiball3DUltra } from '../Pokiball3D/Pokiball3DUltra'
+import { Pokiball3DNet } from '../Pokiball3D/Pokiball3DNet'
 
 interface CategoriesViewProps {
   onNavigateToWelcome: () => void
@@ -38,11 +42,9 @@ export function CategoriesView({
             className="pokeball-card"
             onClick={() => onNavigateToDashboard('achievers')}
           >
-            <img
-              className="pokeball-image"
-              src="/images/ball1.png"
-              alt="Achievers Pokéball"
-            />
+            <div className="pokeball-image" style={{ position: 'relative' }}>
+              <Pokiball3D />
+            </div>
             <span className="pokeball-label">ACHIEVERS</span>
           </button>
 
@@ -51,11 +53,9 @@ export function CategoriesView({
             className="pokeball-card"
             onClick={() => onNavigateToDashboard('sports')}
           >
-            <img
-              className="pokeball-image"
-              src="/images/ball2.png"
-              alt="Sports Pokéball"
-            />
+            <div className="pokeball-image" style={{ position: 'relative' }}>
+              <Pokiball3DBlue />
+            </div>
             <span className="pokeball-label">SPORTS</span>
           </button>
 
@@ -64,11 +64,9 @@ export function CategoriesView({
             className="pokeball-card"
             onClick={() => onNavigateToDashboard('academics')}
           >
-            <img
-              className="pokeball-image"
-              src="/images/ball3.png"
-              alt="Academic Pokéball"
-            />
+            <div className="pokeball-image" style={{ position: 'relative' }}>
+              <Pokiball3DUltra />
+            </div>
             <span className="pokeball-label">ACADEMIC PERFORMANCE</span>
           </button>
 
@@ -77,11 +75,9 @@ export function CategoriesView({
             className="pokeball-card"
             onClick={() => onNavigateToDashboard('fun')}
           >
-            <img
-              className="pokeball-image"
-              src="/images/ball4.png"
-              alt="Fun Pokéball"
-            />
+            <div className="pokeball-image" style={{ position: 'relative' }}>
+              <Pokiball3DNet />
+            </div>
             <span className="pokeball-label">FUN MOMENTS</span>
           </button>
         </div>

@@ -1,124 +1,189 @@
-# 🎮 A6 DEX  
-### Class A6 | Technical Cup Project
+# A6 DEX
 
----
+A modern, interactive profile showcase application built with React, TypeScript, and Vite. Inspired by the Pokédex interface, A6 DEX displays profiles organized by categories: Achievers, Sports, Academic Performance, and Fun Moments.
 
-## 📌 About the Project
+## 🚀 Features
+                                       
+                                       
+- **Modern UI**: Pokédex-inspired interface with smooth animations
+- **Category Organization**: Profiles organized into 4 distinct categories
+- **Interactive Dashboard**: Browse profiles with detailed statistics
+- **Profile Details**: Comprehensive profile views with achievements, habits, personality traits, and stats
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Type-Safe**: Built with TypeScript for better developer experience
 
-**A6 DEX** is a creative and interactive web application developed by **Class A6 (CSE Branch)** as part of the **Technical Cup Competition**.
+## 📋 Prerequisites
 
-Inspired by the **Pokédex-style interface**, this project showcases our classmates as unique digital characters. Each character highlights individuality through achievements, skills, personality traits, and memorable moments — presented in a fun and engaging way.
+- Node.js 18+ and npm/yarn/pnpm
+- Modern web browser
 
-This project is **conceptualized, sponsored, and developed by Class A6**, representing our class identity using modern web technologies.
+## 🛠️ Installation
 
----
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd A6
+```
 
-## 🎯 Project Theme
+2. Install dependencies:
+```bash
+npm install
+```
 
-> **“Every student is unique — A6 DEX captures that uniqueness digitally.”**
+## 🏃 Development
 
-The goal of A6 DEX is to convert a traditional class showcase into a **gamified digital experience**, combining creativity with practical frontend development.
+Start the development server:
+```bash
+npm run dev
+```
 
----
+The application will be available at `http://localhost:5173`
 
-## 🗂️ Categories
+## 🏗️ Build
 
-Profiles are organized into **four main categories**, representing different aspects of student life:
+Build for production:
+```bash
+npm run build
+```
 
-- Achievers  
-- Sports  
-- Academic Performance  
-- Fun Moments  
+The production build will be in the `dist` directory.
 
-Each category contains multiple character profiles representing classmates from Class A6.
+## 📦 Deployment
 
----
+### Vercel
 
-## 👤 Character Profiles (Overview)
+1. Install Vercel CLI:
+```bash
+npm i -g vercel
+```
 
-Each character profile includes a combination of structured and creative details such as:
+2. Deploy:
+```bash
+vercel
+```
 
-- Basic identity information  
-- Category association  
-- Short description  
-- Skill or performance statistics  
-- Achievements and highlights  
-- Personality traits and habits  
-- Character-style image  
+### Netlify
 
-> ⚠️ Profile attributes are flexible and may evolve as the project expands.
+1. Install Netlify CLI:
+```bash
+npm i -g netlify-cli
+```
 
----
+2. Build and deploy:
+```bash
+npm run build
+netlify deploy --prod --dir=dist
+```
 
-## ✨ Key Features
+### GitHub Pages
 
-- Pokédex-inspired modern user interface  
-- Category-based profile navigation  
-- Interactive dashboard for browsing profiles  
-- Detailed profile view for each character  
-- Fully responsive design for mobile and desktop  
-- Clean and maintainable React component structure  
+1. Install gh-pages:
+```bash
+npm install --save-dev gh-pages
+```
 
----
+2. Add to package.json scripts:
+```json
+"deploy": "npm run build && gh-pages -d dist"
+```
 
-## 🧠 Tech Stack
+3. Deploy:
+```bash
+npm run deploy
+```
 
-- **Frontend Framework:** React  
-- **Programming Language:** TypeScript  
-- **Build Tool:** Vite  
-- **Styling:** CSS (Global styles and CSS variables)  
+### Docker
 
-> No external animation or icon libraries are used.  
-> UI behavior is managed using native CSS and React logic.
+1. Build the image:
+```bash
+docker build -t a6-dex .
+```
 
----
-
-## 🧩 UI Components Used *(Bonus Evaluation)*
-
-- Card-based layouts  
-- Grid-based dashboards  
-- Top navigation bar  
-- Category selection views  
-- Profile detail sections  
-
----
-
-## 🔍 SEO & Best Practices *(Bonus Evaluation)*
-
-- Semantic HTML structure  
-- Meta tags for basic SEO  
-- Responsive and mobile-first design  
-- Accessible image usage with alt attributes  
-
----
+2. Run the container:
+```bash
+docker run -p 3000:80 a6-dex
+```
 
 ## 📁 Project Structure
 
-```text
+```
 A6/
-├── public/
-│   ├── images/
-│   └── profile_character_img/
+├── public/                 # Static assets
+│   ├── images/            # Image assets
+│   └── profile_character_img/  # Profile character images
 ├── src/
-│   ├── components/
-│   │   ├── AppShell/
-│   │   ├── TopBar/
-│   │   ├── WelcomeView/
-│   │   ├── CategoriesView/
-│   │   ├── DashboardView/
-│   │   └── ProfileView/
-│   ├── pages/
-│   │   └── HomePage/
-│   ├── data/
-│   │   └── profiles.ts
-│   ├── types/
-│   ├── constants/
-│   ├── styles/
-│   │   ├── globals.css
-│   │   └── tokens.css
-│   ├── App.tsx
-│   └── main.tsx
-├── index.html
-├── vite.config.ts
-├── tsconfig.json
-└── package.json
+│   ├── components/        # React components
+│   │   ├── AppShell/     # Main app shell
+│   │   ├── TopBar/       # Top navigation bar
+│   │   ├── WelcomeView/  # Welcome screen
+│   │   ├── CategoriesView/  # Category selection
+│   │   ├── DashboardView/   # Profile dashboard
+│   │   └── ProfileView/     # Profile detail view
+│   ├── pages/            # Page components
+│   │   └── HomePage/     # Main homepage
+│   ├── data/             # Data files
+│   │   └── profiles.ts   # Profile data
+│   ├── types/            # TypeScript types
+│   │   └── index.ts      # Type definitions
+│   ├── constants/        # Constants
+│   │   └── index.ts      # App constants
+│   ├── styles/           # Global styles
+│   │   ├── globals.css   # Global CSS
+│   │   └── tokens.css    # CSS variables
+│   ├── App.tsx           # Main app component
+│   └── main.tsx          # Entry point
+├── index.html            # HTML template
+├── vite.config.ts        # Vite configuration
+├── tsconfig.json         # TypeScript configuration
+└── package.json          # Dependencies
+```
+
+## 🎨 Customization
+
+### Adding/Editing Profiles
+
+Edit `src/data/profiles.ts` to add or modify profiles. Each profile includes:
+- Basic info (name, role, description)
+- Stats (velocity, impact, creativity)
+- Achievements, habits, personality traits, and qualities
+- Image path (should be in `public/profile_character_img/`)
+
+### Styling
+
+- Global styles: `src/styles/globals.css`
+- CSS variables: `src/styles/tokens.css`
+- Component-specific styles: Component CSS modules
+
+## 🧪 Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
+
+## 📝 License
+
+This project is private and proprietary.
+
+## 👥 Contributing
+
+This is a private project. For internal contributions, please follow the existing code structure and patterns.
+
+## 🐛 Troubleshooting
+
+### Port already in use
+Change the port in `vite.config.ts` or use:
+```bash
+npm run dev -- --port 3000
+```
+
+### Build errors
+Clear node_modules and reinstall:
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
+
+## 📞 Support
+
+For issues or questions, please contact the development team.

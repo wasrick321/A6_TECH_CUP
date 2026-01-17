@@ -26,14 +26,7 @@ export function ProfileView({
           {profile.tags[1]?.toUpperCase() || 'STRATEGIST'}
         </button>
 
-        <div className="profile-actions">
-          <button className="btn full secondary" type="button">
-            SELECT PROFILE
-          </button>
-          <button className="btn full ghost" type="button">
-            COMPARE STATS
-          </button>
-        </div>
+       
       </section>
 
       <section className="profile-right">

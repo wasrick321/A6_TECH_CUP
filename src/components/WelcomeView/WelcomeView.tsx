@@ -23,7 +23,7 @@ export function WelcomeView({ onNavigateToCategories }: WelcomeViewProps) {
           transform: 'scale(1.3)'
         }}
       >
-        <source src="/videos/introdex.mp4" type="video/mp4" />
+        <source src="public/videos/13940.gif" type="video/mp4" />
       </video>
 
       {/* Dark Overlay for text readability */}

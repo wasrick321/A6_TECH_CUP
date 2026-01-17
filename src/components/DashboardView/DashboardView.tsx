@@ -77,22 +77,7 @@ export function DashboardView({
             </span>
             <h1>{CATEGORY_LABELS[category]}</h1>
           </div>
-          <div className="content-header-actions">
-            <button className="btn pill accent" type="button">
-              EXPEDITE SCAN
-            </button>
-            <button className="btn pill outline" type="button">
-              SYNC ARCHIVE
-            </button>
-          </div>
         </header>
-
-        <div className="filter-row">
-          <button className="chip active" type="button">
-            ALL TYPES
-          </button>
-        </div>
-
         <section className="card-grid">
           {profiles.map((p) => (
             <article

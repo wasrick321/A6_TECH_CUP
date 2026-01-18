@@ -85,7 +85,7 @@ export function CategoriesView({
             <div className="pokeball-image" style={{ position: 'relative' }}>
               <Pokiball3DNet />
             </div>
-            <span className="pokeball-label">FUN MOMENTS</span>
+            <span className="pokeball-label">CONTRIBUTORS</span>
           </button>
         </div>
 

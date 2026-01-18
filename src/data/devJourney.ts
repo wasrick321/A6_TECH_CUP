@@ -53,11 +53,21 @@ export const journeyData: JourneyPhase[] = [
   {
     id: 5,
     phase: "PHASE_05",
-    date: "Jan 18, 2026",
-    title: "FINAL FORM",
-    content: "Deployment complete. The Holographic Pokedex Terminal was born. Glassmorphism, neon effects, and heavy physics animations created an immersive experience.",
-    techStack: ["Vercel", "Motion", "Framer Motion", "Production Ready"],
+    date: "Jan 20, 2026",
+    title: "EMBATTLE",
+    content: "The rehearsal phase. We are stress-testing the live demo, sharpening our speech, and preparing to defend our code logic against the judges. The fire is lit. Every detail matters. We are ready for battle.",
+    techStack: ["Rehearsal", "Debug", "QA Testing", "Refinement"],
     pokemonImg: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png",
-    color: "#9b59b6"
+    color: "#ff9f43"
+  },
+  {
+    id: 6,
+    phase: "PHASE_06",
+    date: "Jan 21, 2026",
+    title: "FINAL FORM",
+    content: "This is it. We aren't just here to participate; we are here to dominate. With the craziest UI and the smoothest presentation, we are taking the win against all other sections. Every interaction is polished. Every animation is purposeful. Victory is the only option. We are unstoppable.",
+    techStack: ["Victory", "Championship", "Excellence", "Triumph"],
+    pokemonImg: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png",
+    color: "#ee5253"
   }
 ]

@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Tilt from 'react-parallax-tilt'
+import { useNavigate } from 'react-router-dom'
 import { journeyData } from '../../data/devJourney'
 import './PokedexHolo.css'
 
 export function PokedexHolo() {
   const [activeId, setActiveId] = useState(1)
+  const navigate = useNavigate()
   const activeData = journeyData.find(d => d.id === activeId)!
 
   return (
@@ -40,6 +42,16 @@ export function PokedexHolo() {
               </motion.button>
             ))}
           </div>
+
+          <motion.button
+            className="system-exit-btn"
+            onClick={() => navigate(-1)}
+            whileHover={{ scale: 1.05, boxShadow: "0 0 20px #00f3ff" }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <span className="btn-icon">◀</span>
+            <span>SYSTEM_EXIT</span>
+          </motion.button>
 
           <div className="system-logs">
             <p>&gt; SYSTEM: ONLINE</p>

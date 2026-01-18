@@ -8,8 +8,9 @@ function App() {
     <Routes>
       <Route element={<AppShell />}>
         <Route index element={<HomePage />} />
-        <Route path="blog" element={<PokedexHolo />} />
       </Route>
+      
+      <Route path="blog" element={<PokedexHolo />} />
 
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

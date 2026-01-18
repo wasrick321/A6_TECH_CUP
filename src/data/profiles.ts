@@ -268,7 +268,7 @@ export const PROFILE_DATA: Record<CategoryKey, Profile[]> = {
   qualities: ['Trend Awareness', 'Musicality', 'Physical Endurance', 'Social Versatility']
 },
   ],
-academic: [
+academics: [
   {
     id: 'sharanya',
     name: 'Sharanya Mahajan',

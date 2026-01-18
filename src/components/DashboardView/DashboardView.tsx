@@ -53,7 +53,7 @@ export function DashboardView({
             className={`sidebar-link ${category === 'fun' ? 'active' : ''}`}
             onClick={() => onCategoryChange('fun')}
           >
-            🎉 FUN MOMENTS
+            🎉 CONTRIBUTORS
           </button>
         </nav>
 

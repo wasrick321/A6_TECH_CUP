@@ -1,8 +1,12 @@
+import { useNavigate } from 'react-router-dom'
+
 interface WelcomeViewProps {
   onNavigateToCategories: () => void
 }
 
 export function WelcomeView({ onNavigateToCategories }: WelcomeViewProps) {
+  const navigate = useNavigate()
+
   return (
     <main className="main-screen welcome-screen fade-in">
       {/* Video Background */}
@@ -47,6 +51,13 @@ export function WelcomeView({ onNavigateToCategories }: WelcomeViewProps) {
           onClick={onNavigateToCategories}
         >
           PROFILES
+        </button>
+        <button
+          className="nav-link"
+          type="button"
+          onClick={() => navigate('/blog')}
+        >
+          BLOG
         </button>
       </nav>
 

@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import type { CategoryKey } from '../../types'
 import { Pokiball3D } from '../Pokiball3D/Pokiball3D'
 import { Pokiball3DBlue } from '../Pokiball3D/Pokiball3DBlue'
@@ -13,6 +14,8 @@ export function CategoriesView({
   onNavigateToWelcome,
   onNavigateToDashboard,
 }: CategoriesViewProps) {
+  const navigate = useNavigate()
+
   return (
     <main className="main-screen fade-in">
       <nav className="top-nav">
@@ -25,6 +28,13 @@ export function CategoriesView({
         </button>
         <button className="nav-link active" type="button">
           PROFILES
+        </button>
+        <button
+          className="nav-link"
+          type="button"
+          onClick={() => navigate('/blog')}
+        >
+          BLOG
         </button>
         
       </nav>

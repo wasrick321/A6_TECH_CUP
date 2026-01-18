@@ -17,7 +17,11 @@ export function ProfileView({
     <main className="profile-layout fade-in">
       <section className="profile-left">
         <div className="profile-image-frame glow">
-          <img src={profile.image} alt={profile.name} />
+          <img 
+            src={profile.image} 
+            alt={profile.name}
+            style={profile.id === 'sadu' ? { transform: 'scale(1.5) translateY(23px)' } : profile.id === 'sharanya' ? { transform: 'scale(1.75) translateX(-40px)' } : {}}
+          />
         </div>
         <button className="btn pill secondary" type="button">
           {profile.tags[0]?.toUpperCase() || 'INNOVATOR'}

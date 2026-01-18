@@ -3,15 +3,15 @@ import { GradientTexture, OrbitControls } from "@react-three/drei"
 import { useRef } from "react"
 import type { Group } from "three"
 
-function PokeballBlue() {
+function PokeballBlue({ spin = true }: { spin?: boolean }) {
   const groupRef = useRef<Group>(null)
 
-  // 🎥 Auto spin - Wobbling rotation (X and Y dominant)
+  // 🎥 Auto spin - Wobbling rotation (X and Y dominant) - slower
   useFrame(() => {
-    if (groupRef.current) {
-      groupRef.current.rotation.x += 0.012
-      groupRef.current.rotation.y += 0.005
-      groupRef.current.rotation.z += 0.003
+    if (groupRef.current && spin) {
+      groupRef.current.rotation.x += 0.006
+      groupRef.current.rotation.y += 0.0025
+      groupRef.current.rotation.z += 0.0015
     }
   })
 
@@ -66,9 +66,10 @@ function PokeballBlue() {
 
 interface Pokiball3DBlueProps {
   className?: string
+  spin?: boolean
 }
 
-export function Pokiball3DBlue({ className }: Pokiball3DBlueProps) {
+export function Pokiball3DBlue({ className, spin = true }: Pokiball3DBlueProps) {
   return (
     <Canvas
       shadows
@@ -84,7 +85,7 @@ export function Pokiball3DBlue({ className }: Pokiball3DBlueProps) {
         castShadow
       />
 
-      <PokeballBlue />
+      <PokeballBlue spin={spin} />
 
       {/* Controls */}
       <OrbitControls enableZoom />

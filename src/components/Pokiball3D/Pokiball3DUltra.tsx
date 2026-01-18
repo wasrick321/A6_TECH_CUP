@@ -4,14 +4,16 @@ import { OrbitControls } from "@react-three/drei"
 import * as THREE from "three"
 import type { Group } from "three"
 
-function UltraBall() {
+function UltraBall({ spin = true }: { spin?: boolean }) {
   const groupRef = useRef<Group>(null)
 
-  // 🎥 Spin - Primarily Z rotation with slow X wobble
+  // 🎥 Spin - Primarily Z rotation with slow X wobble - slower
   useFrame(() => {
     if (!groupRef.current) return
-    groupRef.current.rotation.z += 0.02
-    groupRef.current.rotation.x += 0.004
+    if (spin) {
+      groupRef.current.rotation.z += 0.01
+      groupRef.current.rotation.x += 0.002
+    }
   })
 
   // Curve for yellow stripes
@@ -72,9 +74,10 @@ function UltraBall() {
 
 interface Pokiball3DUltraProps {
   className?: string
+  spin?: boolean
 }
 
-export function Pokiball3DUltra({ className }: Pokiball3DUltraProps) {
+export function Pokiball3DUltra({ className, spin = true }: Pokiball3DUltraProps) {
   return (
     <Canvas
       shadows
@@ -84,7 +87,7 @@ export function Pokiball3DUltra({ className }: Pokiball3DUltraProps) {
     >
       <ambientLight intensity={0.4} />
       <directionalLight position={[5, 5, 5]} intensity={1} castShadow />
-      <UltraBall />
+      <UltraBall spin={spin} />
       <OrbitControls enableZoom />
     </Canvas>
   )

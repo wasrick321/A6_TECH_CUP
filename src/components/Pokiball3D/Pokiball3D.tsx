@@ -3,13 +3,15 @@ import { Canvas, useFrame } from "@react-three/fiber"
 import { GradientTexture, OrbitControls } from "@react-three/drei"
 import type { Group } from "three"
 
-function Pokeball() {
+function Pokeball({ spin = true }: { spin?: boolean }) {
   const groupRef = useRef<Group>(null)
 
-  // 🎥 Auto spin - Y axis only (steady vertical spin)
+  // 🎥 Auto spin - Combination spin (X, Y, Z) - slower
   useFrame(() => {
-    if (groupRef.current) {
-      groupRef.current.rotation.y += 0.015
+    if (groupRef.current && spin) {
+      groupRef.current.rotation.x += 0.008
+      groupRef.current.rotation.y += 0.006
+      groupRef.current.rotation.z += 0.004
     }
   })
 
@@ -19,10 +21,10 @@ function Pokeball() {
       {/* Main sphere */}
       <mesh castShadow receiveShadow>
         <sphereGeometry args={[1, 64, 64]} />
-        <meshStandardMaterial roughness={0.3} metalness={0.2}>
+        <meshStandardMaterial roughness={0.2} metalness={0.4}>
           <GradientTexture
             stops={[0, 0.499, 0.5, 1]}
-            colors={["#d10000", "#d10000", "#ffffff", "#ffffff"]}
+            colors={["#ff4444", "#ff4444", "#ffffff", "#ffffff"]}
             size={1024}
           />
         </meshStandardMaterial>
@@ -64,9 +66,10 @@ function Pokeball() {
 
 interface Pokiball3DProps {
   className?: string
+  spin?: boolean
 }
 
-export function Pokiball3D({ className }: Pokiball3DProps) {
+export function Pokiball3D({ className, spin = true }: Pokiball3DProps) {
   return (
     <Canvas
       shadows
@@ -75,14 +78,14 @@ export function Pokiball3D({ className }: Pokiball3DProps) {
       style={{ width: "100%", height: "100%" }}
     >
       {/* Lights */}
-      <ambientLight intensity={0.4} />
+      <ambientLight intensity={0.8} />
       <directionalLight
         position={[5, 5, 5]}
-        intensity={1}
+        intensity={1.5}
         castShadow
       />
 
-      <Pokeball />
+      <Pokeball spin={spin} />
 
       <OrbitControls enableZoom />
     </Canvas>

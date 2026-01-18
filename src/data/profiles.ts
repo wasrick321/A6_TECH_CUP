@@ -27,7 +27,7 @@ export const PROFILE_DATA: Record<CategoryKey, Profile[]> = {
         'A rising force in the development scene, Sadu is recognized for her ability to build functional, high-impact applications under pressure. Her sharp technical intuition and persistence were recently showcased through her top-tier ranking at IIIT Nagpur.',
       stats: { velocity: 89, impact: 85, creativity: 94 },
       entry: '042',
-      image: '/profile_character_img/ch2_girl.png',
+      image: '/profile_character_img/sadu.jpg',
       achievements: [
         'Ranked 4th in Women Dev Hackathon (IIIT Nagpur)',
         'Built a scalable prototype in under 36 hours',
@@ -46,7 +46,7 @@ export const PROFILE_DATA: Record<CategoryKey, Profile[]> = {
     description: 'A dual gold medalist who exemplifies excellence through repetition and mastery. Shubh brings a championship mindset to every project, focusing on precision and high-standard execution.',
     stats: { velocity: 95, impact: 88, creativity: 82 },
     entry: '043',
-    image: '/profile_character_img/ch3_boy.png',
+    image: '/profile_character_img/shubh.jpg',
     achievements: [
       'Double Gold Medalist in academic excellence',
       'Consistent top-tier performer in state competitions',
@@ -65,7 +65,7 @@ export const PROFILE_DATA: Record<CategoryKey, Profile[]> = {
     description: 'A logic powerhouse ranked #1 on LeetCode. Pradyun specializes in optimizing complex systems and solving "impossible" computational problems with unmatched speed.',
     stats: { velocity: 99, impact: 91, creativity: 85 },
     entry: '044',
-    image: '/profile_character_img/ch4_boy.png',
+    image: '/profile_character_img/Pradyun Khot.jpg',
     achievements: [
       'Ranked #1 globally on LeetCode platform',
       'Solved over 2000+ complex algorithmic challenges',
@@ -84,7 +84,7 @@ export const PROFILE_DATA: Record<CategoryKey, Profile[]> = {
     description: 'A National Award winner recognized for high-level contributions to his field. Atharva combines technical depth with a broad strategic perspective that commands attention on a national stage.',
     stats: { velocity: 84, impact: 98, creativity: 90 },
     entry: '045',
-    image: '/profile_character_img/ch5_boy.png',
+    image: '/profile_character_img/atharva dhobale.jpg',
     achievements: [
       'National Award for Technical Excellence',
       'Keynote speaker at regional tech summits',
@@ -103,7 +103,7 @@ export const PROFILE_DATA: Record<CategoryKey, Profile[]> = {
     description: 'A high-achieving scholar who secured her place at Ramdeobaba University. Chitranshi is known for her structured approach to learning and her ability to master new disciplines quickly.',
     stats: { velocity: 82, impact: 85, creativity: 88 },
     entry: '047',
-    image: '/profile_character_img/ch7_girl.png',
+    image: '/profile_character_img/CHITRANSHI KATRE.jpg',
     achievements: [
       'Secured admission to Ramdeobaba University',
       'Maintained a 9.5+ GPA throughout preparatory years',
@@ -122,7 +122,7 @@ export const PROFILE_DATA: Record<CategoryKey, Profile[]> = {
     description: 'A first-place competitor who brings the intensity of the racetrack to the tech world. Jigisha excels in high-pressure environments where split-second decisions make the difference.',
     stats: { velocity: 97, impact: 84, creativity: 80 },
     entry: '048',
-    image: '/profile_character_img/ch8_girl.png',
+    image: '/profile_character_img/jigisha.jpg',
     achievements: [
       '1st Position in Regional Competitive Race',
       'Voted "Most Resilient Athlete" 2024',
@@ -141,7 +141,7 @@ export const PROFILE_DATA: Record<CategoryKey, Profile[]> = {
     description: 'Bridging the gap between content and code. Rajveerr is a prolific creator known for his resilience; famously the last person to be shifted during the class shuffle, he turned a late transition into a strategic advantage by mastering new group dynamics instantly.',
     stats: { velocity: 88, impact: 89, creativity: 96 },
     entry: '046',
-    image: '/profile_character_img/ch6_boy.png',
+    image: '/profile_character_img/RAJVEERR AWACHAT.jpg',
     achievements: [
       'Final student transitioned in the major class shuffle (Adaptive specialist)',
       'Founded a successful tech-focused YouTube channel',
@@ -162,7 +162,7 @@ export const PROFILE_DATA: Record<CategoryKey, Profile[]> = {
     description: 'The ultimate anchor in high-stakes competition. Atharva is known for his immense stability, providing the steady foundation his team needs to pull through the toughest challenges.',
     stats: { velocity: 62, impact: 38, creativity: 70 }, // Low humor, Low nerdy (Pure Strength)
     entry: '105',
-    image: '/profile_character_img/ch3_boy.png',
+    image: '/profile_character_img/ATHARVA_GANGWANI.jpg',
     achievements: [
       'Gold Medalist in Regional Tug of War Championship',
       'Team Lead for strength-based competitive events',
@@ -181,7 +181,7 @@ export const PROFILE_DATA: Record<CategoryKey, Profile[]> = {
     description: 'A dynamic athlete who dominates both the cricket pitch and the tug-of-war line. Ramnayan excels in transitioning between diverse roles, bringing all-rounder utility to every squad.',
     stats: { velocity: 86, impact: 65, creativity: 84 }, // High humor, Moderate nerdy
     entry: '106',
-    image: '/profile_character_img/ch4_boy.png',
+    image: '/profile_character_img/Ram nayan.jpg',
     achievements: [
       'Man of the Match in inter-college cricket tournament',
       'Key contributor to Tug of War victory streak',
@@ -200,7 +200,7 @@ export const PROFILE_DATA: Record<CategoryKey, Profile[]> = {
     description: 'Combining the explosive speed of badminton with the tactical endurance of football. Sachin is a high-velocity player who thrives on the fast-paced transitions of competition.',
     stats: { velocity: 74, impact: 78, creativity: 89 }, // Balanced humor and nerdy
     entry: '107',
-    image: '/profile_character_img/ch5_boy.png',
+    image: '/profile_character_img/sachin.jpg',
     achievements: [
       'Top scorer in regional football league',
       'Winner of local Badminton singles tournament',
@@ -238,7 +238,7 @@ export const PROFILE_DATA: Record<CategoryKey, Profile[]> = {
     description: 'While recognized for her academic success, Chitranshi is equally formidable on the court. She applies her structured academic mindset to basketball.',
     stats: { velocity: 45, impact: 96, creativity: 84 }, // Low humor, Max nerdy (Academic focus)
     entry: '109',
-    image: '/profile_character_img/ch7_girl.png',
+    image: '/profile_character_img/CHITRANSHI KATRE.jpg',
     achievements: [
       'Lead guard for the college basketball team',
       'Top defensive stats in intra-mural tournament',
@@ -257,7 +257,7 @@ export const PROFILE_DATA: Record<CategoryKey, Profile[]> = {
   description: 'A versatile talent who balances the rhythmic precision of a guitarist with the endurance of a competitive swimmer. Raghav is the team’s go-to source for pop culture trends, seamlessly bridging the gap between artistic expression and modern media.',
   stats: { velocity: 92, impact: 78, creativity: 85 }, // High humor (Social/Pop-culture), High nerdy (Music/Tech theory)
   entry: '110',
-  image: '/profile_character_img/ch8_boy.png',
+  image: '/profile_character_img/RaghavChauksey.jpg',
   achievements: [
     'Lead guitarist for regional youth ensemble',
     'State-level swimming finalist (Freestyle)',
@@ -278,7 +278,7 @@ academics: [
     description: 'A dedicated developer known for completing projects with surgical precision. Sharanya possesses the rare ability to master new tech stacks instantly, making her the ultimate reliability asset for any technical squad.',
     stats: { velocity: 65, impact: 92, creativity: 75 }, // Moderate humor, High Nerdy (Technical focus)
     entry: '205',
-    image: '/profile_character_img/ch2_girl.png',
+    image: '/profile_character_img/sharanya.jpg',
     achievements: [
       'Completed all major assignments ahead of scheduled deadlines',
       'Mastered Java, Python, and C core architectures',
@@ -298,7 +298,7 @@ academics: [
     description: 'A visionary who turns abstract academic concepts into physical art. Purva brings a unique creative perspective to the group, proving that technical environments thrive when paired with high-level aesthetic design.',
     stats: { velocity: 70, impact: 68, creativity: 95 }, // High Social, High Creativity
     entry: '206',
-    image: '/profile_character_img/ch3_girl.png',
+    image: '/profile_character_img/purva.jpg',
     achievements: [
       'Excellence award in Art & Craft regional competitions',
       'Chief designer for student-led creative showcases',

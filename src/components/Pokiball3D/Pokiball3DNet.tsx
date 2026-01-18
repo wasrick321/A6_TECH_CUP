@@ -22,14 +22,16 @@ function YellowPanel({ rotation }: YellowPanelProps) {
   )
 }
 
-function NetBall() {
+function NetBall({ spin = true }: { spin?: boolean }) {
   const groupRef = useRef<Group>(null)
 
-  // 🎥 Spin - Fast Y rotation with slight Z tilt
+  // 🎥 Spin - Fast Y rotation with slight Z tilt - slower
   useFrame(() => {
     if (!groupRef.current) return
-    groupRef.current.rotation.y += 0.025
-    groupRef.current.rotation.z += 0.002
+    if (spin) {
+      groupRef.current.rotation.y += 0.0125
+      groupRef.current.rotation.z += 0.001
+    }
   })
 
   return (
@@ -83,9 +85,10 @@ function NetBall() {
 
 interface Pokiball3DNetProps {
   className?: string
+  spin?: boolean
 }
 
-export function Pokiball3DNet({ className }: Pokiball3DNetProps) {
+export function Pokiball3DNet({ className, spin = true }: Pokiball3DNetProps) {
   return (
     <Canvas
       shadows
@@ -95,7 +98,7 @@ export function Pokiball3DNet({ className }: Pokiball3DNetProps) {
     >
       <ambientLight intensity={0.4} />
       <directionalLight position={[5, 5, 5]} intensity={1} castShadow />
-      <NetBall />
+      <NetBall spin={spin} />
       <OrbitControls enableZoom />
     </Canvas>
   )

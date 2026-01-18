@@ -239,6 +239,10 @@ a {
               0 15px 35px rgba(0, 0, 0, 0.7);
 }
 
+.logo-circle.no-spin {
+  animation: none;
+}
+
 .logo-circle img {
   width: 120%;
   height: auto;

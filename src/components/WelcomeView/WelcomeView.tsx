@@ -52,7 +52,7 @@ export function WelcomeView({ onNavigateToCategories }: WelcomeViewProps) {
 
       <section className="welcome-content" style={{ position: 'relative', zIndex: 2 }}>
         <div className="welcome-logo">
-          <div className="logo-circle glow">
+          <div className="logo-circle glow no-spin">
             <img src="/images/A6_logo.png" alt="A6 Logo" />
           </div>
         </div>

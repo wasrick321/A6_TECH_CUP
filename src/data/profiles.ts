@@ -492,8 +492,8 @@ academics: [
   qualities: ['Aesthetic sense', 'Figma proficiency', 'Intelligence', 'Balance'],
 },
     {
-  id: 'rajveer',
-  name: 'Rajveer Awachat',
+  id: 'rajveerr',
+  name: 'Rajveerr Awachat',
   role: 'Resource Catalyst',
   tags: ['branding', 'network'],
   shortTag: 'PLUG',

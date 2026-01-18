@@ -153,86 +153,120 @@ export const PROFILE_DATA: Record<CategoryKey, Profile[]> = {
   },
   ],
   sports: [
+  {
+    id: 'gangwani',
+    name: 'Atharva Gangwani',
+    role: 'Tug of War Champion',
+    tags: ['powerhouse', 'team-anchor'],
+    shortTag: 'FORCE',
+    description: 'The ultimate anchor in high-stakes competition. Atharva is known for his immense stability, providing the steady foundation his team needs to pull through the toughest challenges.',
+    stats: { velocity: 62, impact: 38, creativity: 70 }, // Low humor, Low nerdy (Pure Strength)
+    entry: '105',
+    image: '/profile_character_img/ch3_boy.png',
+    achievements: [
+      'Gold Medalist in Regional Tug of War Championship',
+      'Team Lead for strength-based competitive events',
+      'Recognized for exceptional tactical positioning'
+    ],
+    habits: ['Grip strength drills', 'Team synchronization practice', 'High-protein diet'],
+    personality: ['Determined', 'Reliable', 'Strong-willed', 'Patient'],
+    qualities: ['Physical Power', 'Stability', 'Team Coordination', 'Endurance']
+  },
+  {
+    id: 'ramnayan',
+    name: 'Ramnayan Sharma',
+    role: 'Versatile All-Rounder',
+    tags: ['cricketer', 'multi-sport'],
+    shortTag: 'VERSA',
+    description: 'A dynamic athlete who dominates both the cricket pitch and the tug-of-war line. Ramnayan excels in transitioning between diverse roles, bringing all-rounder utility to every squad.',
+    stats: { velocity: 86, impact: 65, creativity: 84 }, // High humor, Moderate nerdy
+    entry: '106',
+    image: '/profile_character_img/ch4_boy.png',
+    achievements: [
+      'Man of the Match in inter-college cricket tournament',
+      'Key contributor to Tug of War victory streak',
+      'Advanced technical skills in bowling and batting'
+    ],
+    habits: ['Net practice (3 hours daily)', 'Strategic game review', 'Agility training'],
+    personality: ['Adaptable', 'Competitive', 'Social', 'Hard-working'],
+    qualities: ['Versatility', 'Hand-Eye Coordination', 'Strategic Thinking', 'Agility']
+  },
+  {
+    id: 'sachin',
+    name: 'Sachin Mardikar',
+    role: 'Dual-Field Specialist',
+    tags: ['badminton', 'footballer'],
+    shortTag: 'SWIFT',
+    description: 'Combining the explosive speed of badminton with the tactical endurance of football. Sachin is a high-velocity player who thrives on the fast-paced transitions of competition.',
+    stats: { velocity: 74, impact: 78, creativity: 89 }, // Balanced humor and nerdy
+    entry: '107',
+    image: '/profile_character_img/ch5_boy.png',
+    achievements: [
+      'Top scorer in regional football league',
+      'Winner of local Badminton singles tournament',
+      'Achieved peak performance ranking in school athletics'
+    ],
+    habits: ['Reflex training drills', 'Daily cardio circuits', 'Footwork mastery'],
+    personality: ['Energetic', 'Focused', 'Agile', 'Perceptive'],
+    qualities: ['Reflexes', 'Precision', 'Multi-discipline mastery', 'Stamina']
+  },
+  {
+    id: 'jiya',
+    name: 'Jiya Vanjani',
+    role: 'Rhythmic Performer',
+    tags: ['dance', 'creative-lead'],
+    shortTag: 'FLOW',
+    description: 'A master of movement and expression. Jiya treats the stage like a canvas, blending technical precision with creative flair to win over audiences.',
+    stats: { velocity: 92, impact: 52, creativity: 98 }, // Very high humor (Social), Low nerdy
+    entry: '108',
+    image: '/profile_character_img/ch1_girl.png',
+    achievements: [
+      '1st Place in Inter-City Dance Competition',
+      'Choreographed winning routines for group events',
+      'Trained in multiple classical and modern dance forms'
+    ],
+    habits: ['Choreography sessions', 'Daily flexibility routine', 'Music analysis'],
+    personality: ['Expressive', 'Disciplined', 'Creative', 'Confident'],
+    qualities: ['Artistic Vision', 'Flexibility', 'Stage Presence', 'Rhythm']
+  },
+  {
+    id: 'katre_sports',
+    name: 'Chitranshi Katre',
+    role: 'Basketball Strategist',
+    tags: ['hooper', 'academic-athlete'],
+    shortTag: 'COURT',
+    description: 'While recognized for her academic success, Chitranshi is equally formidable on the court. She applies her structured academic mindset to basketball.',
+    stats: { velocity: 45, impact: 96, creativity: 84 }, // Low humor, Max nerdy (Academic focus)
+    entry: '109',
+    image: '/profile_character_img/ch7_girl.png',
+    achievements: [
+      'Lead guard for the college basketball team',
+      'Top defensive stats in intra-mural tournament',
+      'Balanced elite sports with high academic standing'
+    ],
+    habits: ['Free-throw drills', 'Defensive footwork', 'Early morning practice'],
+    personality: ['Analytical', 'Tenacious', 'Organized', 'Coachable'],
+    qualities: ['Court Vision', 'Defense', 'Discipline', 'Tactical Play']
+  },
     {
-      id: 'cameron',
-      name: 'Cameron Black',
-      role: 'Field Commander',
-      tags: ['captain', 'sports'],
-      shortTag: 'CLUTCH',
-      description:
-        'Holds the squad together under pressure and makes the tough calls when the clock runs out. Natural leader who elevates everyone around them.',
-      stats: { velocity: 88, impact: 90, creativity: 72 },
-      entry: '101',
-      image: '/profile_character_img/ch5_boy.png',
-      achievements: [
-        'Championship MVP 3 times',
-        'Led team to 5 consecutive wins',
-        'All-Star selection 4 years',
-      ],
-      habits: ['Morning training', 'Team strategy reviews', 'Post-game analysis'],
-      personality: ['Leader', 'Competitive', 'Supportive', 'Focused'],
-      qualities: ['Leadership', 'Tactical thinking', 'Team motivation', 'Pressure handling'],
-    },
-    {
-      id: 'sam',
-      name: 'Sarah Taylor',
-      role: 'Offense Specialist',
-      tags: ['offense'],
-      shortTag: 'LASER',
-      description:
-        'Deadly accuracy from range and an instinct for finding the smallest scoring window. The finisher who delivers when it matters most.',
-      stats: { velocity: 82, impact: 87, creativity: 70 },
-      entry: '102',
-      image: '/profile_character_img/ch6_girl.png',
-      achievements: [
-        'Top scorer 2 seasons',
-        'Record-breaking accuracy',
-        'Rookie of the Year',
-      ],
-      habits: ['Target practice', 'Film study', 'Precision drills'],
-      personality: ['Precise', 'Confident', 'Determined', 'Calm'],
-      qualities: ['Accuracy', 'Focus', 'Timing', 'Composure'],
-    },
-    {
-      id: 'drew',
-      name: 'Drew Martinez',
-      role: 'Defense Anchor',
-      tags: ['defense'],
-      shortTag: 'SHIELD',
-      description:
-        'Reads the game three moves ahead and shuts down anything that looks like a threat. The immovable force protecting the team.',
-      stats: { velocity: 74, impact: 85, creativity: 65 },
-      entry: '103',
-      image: '/profile_character_img/ch7_boy.png',
-      achievements: [
-        'Best defender award',
-        'Zero goals allowed streak',
-        'Defensive player of year',
-      ],
-      habits: ['Defensive drills', 'Game tape analysis', 'Strength training'],
-      personality: ['Protective', 'Alert', 'Disciplined', 'Reliable'],
-      qualities: ['Positioning', 'Anticipation', 'Strength', 'Awareness'],
-    },
-    {
-      id: 'casey',
-      name: 'Casey Morgan',
-      role: 'Stamina Core',
-      tags: ['endurance'],
-      shortTag: 'RALLY',
-      description:
-        'Never runs out of gas. When everyone slows down, this one quietly takes over. The engine that never quits.',
-      stats: { velocity: 90, impact: 80, creativity: 68 },
-      entry: '104',
-      image: '/profile_character_img/ch1_girl.png',
-      achievements: [
-        'Marathon runner',
-        'Endurance record holder',
-        'Ironman competitor',
-      ],
-      habits: ['Long distance runs', 'Endurance training', 'Recovery routines'],
-      personality: ['Persistent', 'Resilient', 'Patient', 'Strong-willed'],
-      qualities: ['Stamina', 'Endurance', 'Mental toughness', 'Consistency'],
-    },
+  id: 'raghav',
+  name: 'Raghav Chauksey',
+  role: 'Pop-Culture Maverick',
+  tags: ['guitarist', 'swimmer', 'enthusiast'],
+  shortTag: 'CHORD',
+  description: 'A versatile talent who balances the rhythmic precision of a guitarist with the endurance of a competitive swimmer. Raghav is the team’s go-to source for pop culture trends, seamlessly bridging the gap between artistic expression and modern media.',
+  stats: { velocity: 92, impact: 78, creativity: 85 }, // High humor (Social/Pop-culture), High nerdy (Music/Tech theory)
+  entry: '110',
+  image: '/profile_character_img/ch8_boy.png',
+  achievements: [
+    'Lead guitarist for regional youth ensemble',
+    'State-level swimming finalist (Freestyle)',
+    'Curator of comprehensive pop-culture and media archives'
+  ],
+  habits: ['Morning swim laps', 'Daily guitar scales', 'Trend analysis & blogging'],
+  personality: ['Outgoing', 'Observant', 'Rhythmic', 'Cultural'],
+  qualities: ['Trend Awareness', 'Musicality', 'Physical Endurance', 'Social Versatility']
+},
   ],
   academics: [
     {

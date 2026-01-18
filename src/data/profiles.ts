@@ -268,111 +268,146 @@ export const PROFILE_DATA: Record<CategoryKey, Profile[]> = {
   qualities: ['Trend Awareness', 'Musicality', 'Physical Endurance', 'Social Versatility']
 },
   ],
- academic: [
+academic: [
   {
     id: 'sharanya',
     name: 'Sharanya Mahajan',
-    role: 'Project Master',
-    tags: ['developer', 'learner'],
+    role: 'Project Delivery Master',
+    tags: ['developer', 'learner', 'efficient'],
     shortTag: 'PROMPT',
-    description: 'A dedicated developer known for completing projects with precision and learning new tech stacks instantly.',
-    stats: { velocity: 50, impact: 92, creativity: 75 },
+    description: 'A dedicated developer known for completing projects with surgical precision. Sharanya possesses the rare ability to master new tech stacks instantly, making her the ultimate reliability asset for any technical squad.',
+    stats: { velocity: 65, impact: 92, creativity: 75 }, // Moderate humor, High Nerdy (Technical focus)
     entry: '205',
     image: '/profile_character_img/ch2_girl.png',
-    achievements: ['Completed all major assignments ahead of time', 'Mastered Java/Python core'],
-    habits: ['Reading documentation', 'Structured coding'],
-    personality: ['Reliable', 'Quick-learner'],
-    qualities: ['Precision', 'Diligence']
+    achievements: [
+      'Completed all major assignments ahead of scheduled deadlines',
+      'Mastered Java, Python, and C core architectures',
+      'Lead debugger for complex group project modules',
+      'Consistently recognized for clean, readable code'
+    ],
+    habits: ['Deep-dive documentation reading', 'Structured coding sprints', 'Rapid concept mapping', 'Code refactoring'],
+    personality: ['Reliable', 'Quick-learner', 'Disciplined', 'Methodical'],
+    qualities: ['Technical Precision', 'Academic Diligence', 'Logic Synthesis', 'Efficiency']
   },
   {
     id: 'purva',
     name: 'Purva Gattani',
-    role: 'Creative Designer',
-    tags: ['art', 'craft'],
+    role: 'Creative Aesthetician',
+    tags: ['art', 'craft', 'visuals'],
     shortTag: 'DRAFT',
-    description: 'Turns abstract ideas into physical art, bringing a unique creative perspective to the academic group.',
-    stats: { velocity: 60, impact: 70, creativity: 95 },
+    description: 'A visionary who turns abstract academic concepts into physical art. Purva brings a unique creative perspective to the group, proving that technical environments thrive when paired with high-level aesthetic design.',
+    stats: { velocity: 70, impact: 68, creativity: 95 }, // High Social, High Creativity
     entry: '206',
     image: '/profile_character_img/ch3_girl.png',
-    achievements: ['Excellence in Art & Craft competitions'],
-    habits: ['Daily sketching', 'Creative research'],
-    personality: ['Imaginative', 'Quiet'],
-    qualities: ['Visual Design', 'Aesthetics']
+    achievements: [
+      'Excellence award in Art & Craft regional competitions',
+      'Chief designer for student-led creative showcases',
+      'Created visual identities for multiple academic projects',
+      'Top-tier ranking in creative design modules'
+    ],
+    habits: ['Daily conceptual sketching', 'Creative trend research', 'Visual prototyping', 'Portfolio curation'],
+    personality: ['Imaginative', 'Quiet', 'Perceptive', 'Artistic'],
+    qualities: ['Visual Design', 'Aesthetic Logic', 'Originality', 'Spatial Awareness']
   },
   {
     id: 'vidhi',
     name: 'Vidhi Mantri',
     role: 'UX Architect',
-    tags: ['ui-ux', 'design'],
+    tags: ['ui-ux', 'design', 'psychology'],
     shortTag: 'PIXEL',
-    description: 'Focuses on the intersection of technology and human interaction to create seamless digital experiences.',
-    stats: { velocity: 70, impact: 85, creativity: 96 },
+    description: 'Focuses on the vital intersection of technology and human interaction. Vidhi designs seamless digital experiences by combining technical logic with a deep understanding of user psychology.',
+    stats: { velocity: 78, impact: 85, creativity: 96 }, // High Humor (Social), High Nerdy (UX Theory)
     entry: '207',
     image: '/profile_character_img/ch4_girl.png',
-    achievements: ['Designed multiple winning UI prototypes'],
-    habits: ['User journey mapping', 'Interface testing'],
-    personality: ['Empathetic', 'Detail-oriented'],
-    qualities: ['User Psychology', 'Design Logic']
+    achievements: [
+      'Designed multiple award-winning UI/UX prototypes',
+      'Certified specialist in user-centric design frameworks',
+      'Conducted extensive user research for department apps',
+      'Top marks in Human-Computer Interaction studies'
+    ],
+    habits: ['User journey mapping', 'Interface usability testing', 'Design system updates', 'Sketching wireframes'],
+    personality: ['Empathetic', 'Detail-oriented', 'Communicative', 'Analytical'],
+    qualities: ['User Psychology', 'Design Logic', 'Attention to Detail', 'Prototyping']
   },
   {
     id: 'krishna',
     name: 'Krishna Toshniwal',
-    role: 'CP Enthusiast',
-    tags: ['competitive-coding', 'algorithms'],
+    role: 'Algorithm Tactician',
+    tags: ['coding', 'algorithms', 'competitor'],
     shortTag: 'INDEX',
-    description: 'Thrives in the world of competitive programming, constantly pushing limits on coding platforms.',
-    stats: { velocity: 65, impact: 98, creativity: 85 },
+    description: 'A true denizen of the competitive programming world. Krishna thrives in high-pressure environments, constantly pushing the limits of time and space complexity on global coding platforms.',
+    stats: { velocity: 68, impact: 98, creativity: 82 }, // Extreme Nerdy (Technical Depth)
     entry: '208',
     image: '/profile_character_img/ch14_boy.png',
-    achievements: ['Advanced rank in coding contests'],
-    habits: ['Daily problem solving', 'Algorithm study'],
-    personality: ['Analytical', 'Persistent'],
-    qualities: ['Speed Coding', 'Logic']
+    achievements: [
+      'Advanced rank in international coding contests',
+      'Solved 500+ complex algorithmic problems',
+      'Optimized legacy code structures for efficiency',
+      'Winner of department-level "Logic-Thon"'
+    ],
+    habits: ['Daily problem solving', 'Algorithm whiteboarding', 'Complexity analysis', 'Tech forum contribution'],
+    personality: ['Analytical', 'Persistent', 'Stoic', 'Goal-oriented'],
+    qualities: ['Speed Coding', 'Mathematical Logic', 'Optimization', 'Tenacity']
   },
   {
     id: 'trupti',
     name: 'Trupti Tiwari',
-    role: 'Scholastic Leader',
-    tags: ['academic', 'focus'],
+    role: 'Scholastic Lead',
+    tags: ['academic', 'focus', 'mentor'],
     shortTag: 'KNOWLEDGE',
-    description: 'A top performer who maintains high standards of academic excellence through a methodical approach.',
-    stats: { velocity: 55, impact: 96, creativity: 80 },
+    description: 'The standard-bearer for academic excellence. Trupti maintains a high-altitude GPA through a methodical and disciplined approach, serving as a knowledge hub for her peers.',
+    stats: { velocity: 62, impact: 96, creativity: 80 }, // Max Nerdy (Academic focus)
     entry: '209',
     image: '/profile_character_img/ch5_girl.png',
-    achievements: ['Maintained consistent 9+ GPA'],
-    habits: ['Meticulous note-taking', 'Study group lead'],
-    personality: ['Disciplined', 'Knowledgeable'],
-    qualities: ['Recall', 'Organization']
+    achievements: [
+      'Maintained consistent 9+ SGPA across all semesters',
+      'Subject Matter Expert in core technical theory',
+      'Lead coordinator for peer-to-peer study groups',
+      'Recognized for exceptional research documentation'
+    ],
+    habits: ['Meticulous note-taking', 'Active recall sessions', 'Weekly knowledge audits', 'Mentoring junior students'],
+    personality: ['Disciplined', 'Knowledgeable', 'Patient', 'Structured'],
+    qualities: ['Information Recall', 'Organization', 'Diligence', 'Critical Thinking']
   },
   {
     id: 'gauri',
     name: 'Gauri Agrawal',
     role: 'Logic Developer',
-    tags: ['coding', 'software'],
+    tags: ['clean-code', 'software', 'builder'],
     shortTag: 'SYNTAX',
-    description: 'A developer focused on writing clean, efficient code to solve real-world academic problems.',
-    stats: { velocity: 60, impact: 88, creativity: 82 },
+    description: 'A developer dedicated to the craft of clean architecture. Gauri focuses on writing efficient, readable code to solve real-world problems, ensuring that software remains scalable and elegant.',
+    stats: { velocity: 72, impact: 88, creativity: 82 }, // Balanced stats
     entry: '210',
     image: '/profile_character_img/ch1_girl.png',
-    achievements: ['Lead contributor to academic software projects'],
-    habits: ['Clean code reviews', 'Logic building'],
-    personality: ['Logical', 'Helpful'],
-    qualities: ['Software Architecture', 'Clarity']
+    achievements: [
+      'Lead contributor to academic software frameworks',
+      'Developed a full-stack solution for student management',
+      'Excellence in software engineering principles',
+      'Recognized for building highly intuitive app logic'
+    ],
+    habits: ['Clean code reviews', 'Logic building exercises', 'Module testing', 'Tech stack experimentation'],
+    personality: ['Logical', 'Helpful', 'Focused', 'Pragmatic'],
+    qualities: ['Software Architecture', 'Clarity', 'Modular Design', 'Deductive Reasoning']
   },
   {
     id: 'vedant_l',
     name: 'Vedant Lende',
-    role: 'System Architect',
-    tags: ['coding', 'tech'],
+    role: 'Systems Architect',
+    tags: ['backend', 'tech', 'builder'],
     shortTag: 'BUILDER',
-    description: 'Expert in system-level coding, ensuring that all technical frameworks are robust and scalable.',
-    stats: { velocity: 62, impact: 90, creativity: 84 },
+    description: 'A technical specialist focused on the engine under the hood. Vedant ensures that all technical frameworks are robust and scalable, specializing in systems-level coding and infrastructure.',
+    stats: { velocity: 65, impact: 90, creativity: 84 }, // High Nerdy
     entry: '211',
     image: '/profile_character_img/ch15_boy.png',
-    achievements: ['Optimized backend systems for team projects'],
-    habits: ['Technical reading', 'Refactoring code'],
-    personality: ['Systematic', 'Quietly ambitious'],
-    qualities: ['Back-end Logic', 'Stability']
+    achievements: [
+      'Optimized backend performance for group projects',
+      'Built custom API structures for mobile applications',
+      'Advanced proficiency in database management',
+      'Winner of "Best Infrastructure" in regional hackathon'
+    ],
+    habits: ['Refactoring code', 'Technical literature review', 'System stress testing', 'Debugging sessions'],
+    personality: ['Systematic', 'Ambitious', 'Resilient', 'Observant'],
+    qualities: ['Back-end Logic', 'Stability', 'System Design', 'Technical Depth']
   }
 ],
   fun: [

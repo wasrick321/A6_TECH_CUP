@@ -1,6 +1,6 @@
 # 🎮 A6 DEX  
 ### Class A6 | Technical Cup Project
-
+Deployed link:  https://a6-tech-cup-frq2.vercel.app/
 ---
 
 ## 📌 About the Project

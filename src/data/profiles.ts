@@ -421,7 +421,7 @@ academics: [
     'The driving force behind the aesthetic and the team. Blends high-end 3D graphics with seamless UI while taking full ownership of the mission.',
   stats: { velocity: 92, impact: 95, creativity: 94 },
   entry: '302',
-  image: '/images/images.jpg',
+  image: '/images/448.png',
   achievements: [
     'Master of 3D environments',
     'Intuitive UI designer',

@@ -441,7 +441,7 @@ academics: [
     'The calm in the center of the storm. Expertly juggles complex tasks while building the solid foundation that keeps the entire site standing.',
   stats: { velocity: 85, impact: 90, creativity: 82 },
   entry: '303',
-  image: '/images/27a6bf51caaf410d9e2e992ec73e754f.jpeg',
+  image: '/images/282.png',
   achievements: [
     'Complex site architecture',
     'Efficiency optimization',
@@ -461,7 +461,7 @@ academics: [
     'A quiet powerhouse who thrives under the moonlight. Transforms abstract thoughts into compelling content while the rest of the world sleeps.',
   stats: { velocity: 78, impact: 86, creativity: 98 },
   entry: '304',
-  image: '/images/images (1).jpg',
+  image: '/images/025.png',
   achievements: [
     'Viral conceptual frameworks',
     'Narrative design expert',
@@ -481,7 +481,7 @@ academics: [
     'Moves through Figma with effortless grace. Creates the perfect creative backdrop and atmosphere with a smart, calculated design approach.',
   stats: { velocity: 84, impact: 87, creativity: 92 },
   entry: '306',
-  image: '/images/images (2).png',
+  image: '/images/359.png',
   achievements: [
     'Figma component mastery',
     'Atmospheric backdrop design',
@@ -501,7 +501,7 @@ academics: [
     'The man with the plan and the contacts. Distills a brand into a single logo while leveraging a massive network to get anything done.',
   stats: { velocity: 94, impact: 89, creativity: 85 },
   entry: '305',
-  image: '/images/images (2).jpg',
+  image: '/images/143.png',
   achievements: [
     'Iconic brand identity design',
     'Master networker',

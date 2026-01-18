@@ -37,7 +37,6 @@ export const PROFILE_DATA: Record<CategoryKey, Profile[]> = {
       personality: ['Ambitious', 'Pragmatic', 'Resilient', 'Curious'],
       qualities: ['Agile Development', 'UI/UX Logic', 'Competitive Spirit', 'Collaboration'],
     },
-    [
   {
     id: 'shubh',
     name: 'Shubh Surana',
@@ -94,25 +93,6 @@ export const PROFILE_DATA: Record<CategoryKey, Profile[]> = {
     habits: ['Strategic planning', 'Public speaking practice', 'Networking'],
     personality: ['Charismatic', 'Insightful', 'Composed', 'Ambitious'],
     qualities: ['Strategic Vision', 'Integrity', 'Impact-driven', 'Influence']
-  },
-  {
-    id: 'rajveerr',
-    name: 'Rajveerr Awachat',
-    role: 'Digital Creator & Hacker',
-    tags: ['influencer', 'builder'],
-    shortTag: 'MEDIA',
-    description: 'Bridging the gap between content and code. Rajveerr is a prolific creator and hackathon enthusiast who knows how to build a product and tell its story simultaneously.',
-    stats: { velocity: 88, impact: 89, creativity: 96 },
-    entry: '046',
-    image: '/profile_character_img/ch6_boy.png',
-    achievements: [
-      'Founded a successful tech-focused YouTube channel',
-      'Placed in top 5 of three consecutive hackathons',
-      'Built a community of 10k+ aspiring developers'
-    ],
-    habits: ['Daily content creation', 'Rapid ideation', 'Agile building'],
-    personality: ['Energetic', 'Creative', 'Communicative', 'Adaptive'],
-    qualities: ['Storytelling', 'Rapid Prototyping', 'Personal Branding', 'Outreach']
   },
   {
     id: 'chitranshi',

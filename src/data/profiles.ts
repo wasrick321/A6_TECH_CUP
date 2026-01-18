@@ -48,18 +48,24 @@ const commonQualities = [
 export const PROFILE_DATA: Record<CategoryKey, Profile[]> = {
   achievers: [
     {
-      id: 'a6-1',
-      name: 'Ruhaan Dubey',
-      role: 'Class Member',
-      tags: ['student'],
-      description: 'A regular class member balancing academics and campus life.',
-      stats: { humour: randomStat(), nerdy: randomStat(), creativity: randomStat() },
-      entry: 'A6-B1-1',
-      image: boyImages[boyIndex++ % boyImages.length],
-      achievements: ['Completed semester coursework'],
-      habits: commonHabits,
-      personality: commonPersonality,
-      qualities: commonQualities,
+      id: 'sadu',
+      name: 'Sadu Sawarkar',
+      role: 'Full-Stack Developer & Hackathon Finalist',
+      tags: ['competitor', 'problem-solver'],
+      shortTag: 'SIGMA',
+      description:
+        'A rising force in the development scene, Sadu is recognized for her ability to build functional, high-impact applications under pressure. Her sharp technical intuition and persistence were recently showcased through her top-tier ranking at IIIT Nagpur.',
+      stats: { velocity: 89, impact: 50, creativity: 94 },
+      entry: '042',
+      image: '/profile_character_img/ch2_girl.png',
+      achievements: [
+        'Ranked 4th in Women Dev Hackathon (IIIT Nagpur)',
+        'Built a scalable prototype in under 36 hours',
+        'Top contributor to community open-source projects',
+      ],
+      habits: ['Night owl coder', 'Technical blogging', 'Rapid prototyping'],
+      personality: ['Ambitious', 'Pragmatic', 'Resilient', 'Curious'],
+      qualities: ['Agile Development', 'UI/UX Logic', 'Competitive Spirit', 'Collaboration'],
     },
     {
       id: 'a6-2',

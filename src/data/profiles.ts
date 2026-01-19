@@ -272,11 +272,11 @@ academics: [
   {
     id: 'sharanya',
     name: 'Sharanya Mahajan',
-    role: 'Project Delivery Master',
+    role: 'Spark Innovator',
     tags: ['developer', 'learner', 'efficient'],
     shortTag: 'PROMPT',
     description: 'A dedicated developer known for completing projects with surgical precision. Sharanya possesses the rare ability to master new tech stacks instantly, making her the ultimate reliability asset for any technical squad.',
-    stats: { velocity: 65, impact: 92, creativity: 75 }, // Moderate humor, High Nerdy (Technical focus)
+    stats: { velocity: 100, impact: 20, creativity: 90 }, // Moderate humor, High Nerdy (Technical focus)
     entry: '205',
     image: '/profile_character_img/sharanya.jpg',
     achievements: [
@@ -439,9 +439,9 @@ academics: [
   shortTag: 'CORE',
   description:
     'The calm in the center of the storm. Expertly juggles complex tasks while building the solid foundation that keeps the entire site standing.',
-  stats: { velocity: 85, impact: 90, creativity: 82 },
+  stats: { velocity: 30, impact: 90, creativity: 100 },
   entry: '303',
-  image: '/images/282.png',
+  image: '/images/290.png',
   achievements: [
     'Complex site architecture',
     'Efficiency optimization',

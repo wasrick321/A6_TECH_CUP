@@ -28,7 +28,7 @@ Profiles are organized into **four main categories**, representing different asp
 - Achievers  
 - Sports  
 - Academic Performance  
-- Fun Moments  
+- Contributors 
 
 Each category contains multiple character profiles representing classmates from Class A6.
 

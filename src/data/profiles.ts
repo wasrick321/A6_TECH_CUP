@@ -441,7 +441,7 @@ academics: [
     'The calm in the center of the storm. Expertly juggles complex tasks while building the solid foundation that keeps the entire site standing.',
   stats: { velocity: 30, impact: 90, creativity: 100 },
   entry: '303',
-  image: '/images/ch290.jpeg',
+  image: '/images/133.png',
   achievements: [
     'Complex site architecture',
     'Efficiency optimization',
